@@ -85,14 +85,11 @@ app.layout = dbc.Container(fluid=True, children=[
     # Navbar
     dbc.Navbar(
         dbc.Container([
-            html.A(
-                dbc.Row([
-                    dbc.Col(html.Img(src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg", height="40px")),
-                    dbc.Col(html.H2("AIMS: Activity Dashboard", className="ms-3 text-dark")),
-                ], align="center", className="g-0"),
-                href="/"
-            ),
-        ], fluid=True),
+          html.A([
+                dbc.Col(html.Img(src="/assets/1.png", height="40px"), width="auto", className="d-flex align-items-center"),
+                dbc.Col(html.H2("AIMS: Activity Dashboard", className="ms-3"), width="auto", className="d-flex align-items-center",style={ "color":"#6c757d"})
+            ], href="/", className="d-flex align-items-center",style={"text-decoration":"none"})
+        ], fluid=True, className="g-0 d-flex"),
         color="light",
         dark=False,
         sticky="top",
